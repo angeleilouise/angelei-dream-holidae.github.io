@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Holidae - Book Now </title>
+    <link rel="stylesheet" href="/Holidae Website/style.css"> <!-- Link to external CSS -->
+    <script src="/Holidae Website/script.js"></script> <!-- Link to external JavaScript -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header> <!-- Start of header -->
+        <h1> ⁀જ✈︎Holidae </h1> <!-- Header for logo and website title -->
+        <nav> <!-- Navigation bar -->
+            <ul> <!-- Navigation links in an unordered list -->
+                <li> <a href="/Holidae Website/index.html"> Home </a></li> <!-- Landing/home page -->
+                <li> <a href="holidae.html"> Ultimate Holidae </a></li> <!-- Ultimate Holidae page -->
+                <li> <a href="booknow.html"> Book Now </a></li> <!-- Book Now page -->
+            </ul> <!-- End of navigation links -->
+        </nav> <!-- End of navigation bar -->
+    </header> <!-- End of header -->
+
+    <main class="book-now-main"> <!-- Main container for web page -->
+        <div class="book-now-left"> <!-- Div for the left side of the web page -->
+            <div class="book-now-title"> <!-- Page Title heading 1 -->
+                <h1> Turn Your Holiday Dream Into A Holidae Reality! ☁︎⌯✈︎ </h1> <!-- Page heading -->
+            </div> <!-- End of page title heading 1 -->
+            <div class="book-now-gif-container"> <!-- Container for page GIF -->
+                <img src="/Holidae Website/media/booknow.gif" alt="Book Now Holidae GIF"> <!-- GIF source -->
+            </div> <!-- End of container for page GIF -->
+        </div> <!-- End of left side div -->
+
+        <div class="book-now-right" id="formSection">
+            <!-- Container for booking form on the right side of the web page -->
+
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <!-- Name input + placeholder -->
+
+            <input type="email" id="email" name="email" placeholder="Your Mail" required>
+            <!-- Email input + placeholder -->
+
+            <select name="bundle" class="bundle-select" required> <!-- Package selection dropdown -->
+                <option value="selection"> Select a Bundle! </option>
+                <option value="italy"> La Dolce Vita: Capri, Italy </option> <!-- Bundle option -->
+                <option value="france"> L’Art de Vivre: Paris, France </option> <!-- Bundle option -->
+                <option value="norway"> Waffles & Waterfalls: Bergen, Norway </option> <!-- Bundle option -->
+                <option value="switzerland"> Winter Wonderland: Zermatt, Switzerland </option> <!-- Bundle option -->
+                <option value="scotland"> Wizards and Muggles: Edinburgh, Scotland </option> <!-- Bundle option -->
+                <option value="greece"> Golden Hour: Santorini, Greece </option> <!-- Bundle option -->
+            </select>
+
+            <button class="book-now-btn" onclick="handleBooking()"> Book Now! </button>
+            <!-- Button class + onclick JavaScript -->
+
+        </div> <!-- End of booking form container -->
+
+        <div class="book-now-right" id="successSection" style="display:none;">
+            <!-- This is for when user answer all the form and press the Book Now! button -->
+            <div class="success-card" id="successCard" style="display:flex;">
+                <!-- Successfull booking will be confirmed with the following heading -->
+                <h2>Your Dream Holidae Awaits!</h2> <!-- Booking success confirmation -->
+                <hr class="success-divider"> <!-- horizontal line -->
+            </div> <!-- End of horizontal divder div -->
+            <button class="book-now-btn" onclick="resetForm()"> Book Again! </button> <!-- Button for booking AGAIN -->
+        </div> <!-- End of book-now-right div -->
+
+    </main> <!-- End of main container -->
+
+
+    <footer> <!-- Footer -->
+        <p> &copy; 2026 Holidae </p> <!-- Paragraph with special character for webpage copyright -->
+        <p> ✉ holidae@mail.com </p> <!-- Paragraph for website mail contact information -->
+    </footer> <!-- End of footer -->
+
+</body>
+
+</html>

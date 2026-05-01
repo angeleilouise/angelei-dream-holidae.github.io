@@ -1,0 +1,871 @@
+html {
+    /* Smooth scrolling when user clicks on links and buttons to navigate through the website */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Default style for website */
+    background-color: #f0eeea;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Header section */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-bottom: 0.5px solid #94212d;
+    background-color: #fff;
+}
+
+header h1 {
+    /* Title inside header style */
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #94212d;
+}
+
+ul {
+    /* Navigation menu style under header */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+ul a {
+    /* Stylfe for naviation links */
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+    color: #1800ad;
+}
+
+ul a:hover {
+    /* Button hover effect for navigation links */
+    text-decoration: underline;
+}
+
+.intro-text h2 {
+    /* Style for the heading 2 in Home page */
+    color: #94212d;
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: bold;
+    text-shadow: 8px 6px #ffffff;
+}
+
+.intro-text h3 {
+    /*Style for heading 3 in Home page */
+    color: #1800ad;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.intro-text {
+    /* Padding for Home page paragraph */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-text p:hover {
+    /* When user hovers over home page paragraph, it will slightly lift */
+    transform: scale(1.05);
+}
+
+.intro-text p {
+    /* Style for home page paragraph */
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    background-color: white;
+    font-weight: 350;
+    padding: 28px 28px;
+    color: #94212d;
+    border-radius: 10px;
+    text-align: justify;
+    line-height: 1.6;
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro {
+    /* Home page display */
+    display: flex;
+    min-height: calc(100vh - 80px);
+    align-items: stretch;
+}
+
+.intro-text,
+.intro-image {
+    /* Home page image display */
+    flex: 1;
+}
+
+.intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bundle-container {
+    /* Style for Bundles page container */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.intro-h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: bold;
+    color: #94212d;
+    background-color: white;
+    padding: 8px;
+    text-shadow: 8px 6px #f0eeea;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.intro-button {
+    background-color: #94212d;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px 32px;
+    margin-left: 2%;
+    margin-right: 50%;
+}
+
+.intro-button:hover {
+    transform: scale(1.05);
+    background-color: #6C2C25;
+}
+
+.bundle-item {
+    /* Individual bundle styling */
+    height: 33vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.bundle-item .overlay {
+    /* individual bundle display and overlay effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.bundle-item:hover .overlay {
+    /* Hovering and overlay effect */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bundle-item h2 {
+    /* Bundle item title styling */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bundle-item:hover h2 {
+    /* bundle item's title hovering opacity */
+    opacity: 1;
+}
+
+.bundle-item:hover {
+    /* bundle item's title hovering effect */
+    transform: scale(1.05);
+}
+
+.bundle-item img {
+    /* bundle item image display and cover */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ultimate {
+    /* Default flex display, stretch alignment, and height sizing for the ultimate web page */
+    display: flex;
+    min-height: calc(100vh - 80px);
+    align-items: stretch;
+}
+
+.ultimate-left,
+.ultimate-image {
+    /* Flex display of 1 in the left side of the web page, including the image */
+    flex: 1;
+}
+
+.ultimate-left {
+    /* Styling for the left side of the web page with flex display 1, column direction, and centered content */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.ultimate-title {
+    /* container of ultimate bundle title styling */
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    color: #94212d;
+    font-style: bold;
+    font-weight: 700;
+    background-color: white;
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ultimate-title:hover {
+    /* When user hover over the ultimate title, it transform */
+    transform: scale(1.05);
+}
+
+.ultimate-text {
+    /* Styling for the ultimate-text paragraph with specific box-sizing and transition */
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: #94212d;
+    padding: 24px;
+    border-radius: 15px;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ultimate-text:hover {
+    /* When user hover over the text, the text transform */
+    transform: scale(1.05);
+    background-color: #6C2C25;
+}
+
+.ultimate-button {
+    /* Styling for the webpage button with animaion and pointer cursor */
+    background-color: #94212d;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 32px;
+    border: 5px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    align-self: flex-end;
+    margin-right: 15%;
+}
+
+.ultimate-button:hover {
+    /* When user hover over the button it transform and background color changes */
+    transform: scale(1.05);
+    background-color: #6C2C25;
+}
+
+.ultimate-image img {
+    /* Styling, sizing, and object fit of the webpage image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+
+    /* Simple animation for when each time button is pressed */
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text {
+    /* Fade in animation of 5 seconds ease-out */
+    animation: fadeIn 0.5s ease-out;
+}
+
+.ultimate-h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: bold;
+    color: #94212d;
+    background-color: white;
+    padding: 8px;
+    text-shadow: 8px 6px #f0eeea;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    /* Styles the gallery webpage in a flex display */
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    /* Styles all row in a flex with specific height */
+    display: flex;
+    height: 275px;
+}
+
+.cell {
+    /* Styles all cell in a flex display, making sure the position is relative for the media used */
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.cell-wide {
+    /* For wider cell styling, flex value is set to 2, hides overflow content, and sets position to relative */
+    flex: 2;
+}
+
+.cell img,
+.cell video {
+    /* Styles the images and video within the regular cells to fit the container with width, height, and object-fit to cover (for media to cover the cell without distortion) and display block to removre space below each media element */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cell-wide img,
+.cell-wide video {
+    /* Styles the images and video within the WIDE cell to fit the container with width, height, object-fit, and display block to remove space below each media element */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.book-now-main {
+    /* flex display of the book-now container */
+    flex: 1;
+    display: flex;
+    gap: 40px;
+    padding: 40px 60px 50px 60px;
+    min-height: calc(100vh - 28vh);
+    align-items: center;
+}
+
+.book-now-left {
+    /* style for the left side of my web page that contains title and GIF */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.book-now-title h1 {
+    /* Left side styling with the title and text design */
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: bold;
+    text-align: center;
+    color: #94212d;
+    text-shadow: 8px 6px #ffffff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-now-title h1:hover {
+    transform: scale(1.05);
+}
+
+.book-now-gif-container {
+    /* Container display for the GIF */
+    background-color: white;
+    padding: 18px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-now-gif-container img {
+    /* Style and display for the GIF */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.book-now-gif-container:hover {
+    transform: scale(1.05);
+}
+
+.book-now-right {
+    /* Display and flex design of the right side of my webpage */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.book-now-right input,
+.book-now-right textarea,
+.book-now-right select {
+    /* Styling for the input space AND user select area */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: #555;
+    width: 100%;
+    padding: 18px 22px;
+    border: 2px solid #e8e4e0;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.book-now-right input::placeholder,
+.book-now-right textarea:placeholder {
+    /* Style for the form input place holder*/
+    color: #bbb;
+}
+
+.book-now-right input:focus,
+.book-now-right textarea:focus {
+    /* Stlyle for the form focus */
+    border-color: #94212d;
+}
+
+.book-now-right select {
+    /* Selection overrides - taller box, square-ish corners */
+    height: 150px;
+    border-radius: 20px;
+    resize: none;
+}
+
+.book-now-btn {
+    /* Style for the Book Now! button */
+    align-self: flex-start;
+    padding: 14px 36px;
+    background-color: #6C2C25;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.book-now-btn:hover {
+    /* When user hover the button will raise slightly */
+    background-color: #94212d;
+    transform: translateY(-3px);
+}
+
+.success-card {
+    /* Style for booking success container */
+    display: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    gap: 16px;
+}
+
+.success-card h2 {
+    /* Style for the heading 2 inside success-card container */
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    font-style: italic;
+    color: #1800ad;
+    margin: 0;
+}
+
+.success-divider {
+    /* style for the horizontal line */
+    width: 60%;
+    height: 3px;
+    background-color: #94212d;
+    border: none;
+    border-radius: 2px;
+}
+
+footer {
+    /* Footer color and padding */
+    background-color: white;
+    padding: 18px;
+}
+
+footer p {
+    /* Footer text style, display, and content justification */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #94212d;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+/* Additional Requirement - Media Query: to make sure users using smaller screen devices can still smoothly browse through the website */
+
+@media (max-width: 768px) {
+    /* Medium size screens such as tablets or ipads */
+    /* Individual styling for the media query using flex direction,
+padding, change of font sizes, flex-wrap and direction, 
+and min height */
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    ul a {
+        font-size: 16px;
+    }
+
+    ul a:hover {
+        padding: 8px 12px;
+    }
+
+    .intro {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .intro-text {
+        padding: 30px 24px;
+    }
+
+    .intro-text h2 {
+        font-size: 30px;
+    }
+
+    .intro-text h3 {
+        font-size: 17px;
+        margin-top: -10px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+    }
+
+    .intro-image {
+        height: 280px;
+    }
+
+    .bundle-container {
+        position: static;
+        transform: none;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 20px 20px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .bundle-item {
+        height: 28vh;
+    }
+
+    .bundle-item h2 {
+        font-size: 20px;
+    }
+
+    .ultimate {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .ultimate-left {
+        padding: 30px 24px;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .ultimate-title {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .ultimate-text {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .ultimate-button {
+        margin-right: 0;
+        align-self: center;
+    }
+
+    .ultimate-image {
+        height: 300px;
+    }
+
+    .ultimate-image img {
+        height: 100%;
+    }
+
+    .row {
+        height: 200px;
+    }
+
+    .book-now-main {
+        flex-direction: column;
+        padding: 30px 24px;
+        gap: 24px;
+        min-height: auto;
+    }
+
+    .book-now-left {
+        gap: 16px;
+    }
+
+    .book-now-title h1 {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .book-now-gif-container img {
+        height: 220px;
+    }
+
+    .book-now-right input,
+    .book-now-right textarea {
+        font-size: 14px;
+        padding: 14px 18px;
+    }
+
+    .book-now-btn {
+        font-size: 14px;
+        padding: 12px 28px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller size screens such as mobile devices */
+    /* Individual styling for the media query using flex direction,
+padding, change of font sizes, and min height */
+
+    header {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    ul {
+        gap: 6px;
+    }
+
+    ul a {
+        font-size: 13px;
+    }
+
+    ul a:hover {
+        padding: 6px 8px;
+    }
+
+    .intro-text {
+        padding: 20px 16px;
+    }
+
+    .intro-text h2 {
+        font-size: 22px;
+    }
+
+    .intro-text h3 {
+        font-size: 14px;
+        text-align: left;
+        margin-top: -8px;
+    }
+
+    .intro-text p {
+        font-size: 13px;
+        padding: 18px 16px;
+    }
+
+    .intro-image {
+        height: 220px;
+    }
+
+    .bundle-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .bundle-item {
+        height: 30vw;
+        min-height: 140px;
+    }
+
+    .bundle-item h2 {
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    .bundle-item .overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .ultimate-title {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .ultimate-text {
+        font-size: 13px;
+        width: 95%;
+        padding: 18px;
+    }
+
+    .ultimate-image {
+        height: 240px;
+    }
+
+    .gallery {
+        overflow-x: hidden;
+    }
+
+    .row {
+        height: 160px;
+    }
+
+    .cell-wide {
+        flex: 1.5;
+    }
+
+    .book-now-main {
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .book-now-title h1 {
+        font-size: 14px;
+    }
+
+    .book-now-gif-container {
+        padding: 12px;
+    }
+
+    .book-now-gif-container img {
+        height: 180px;
+    }
+
+    .book-now-right input,
+    .book-now-right textarea {
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+
+    .book-now-right textarea {
+        height: 120px;
+    }
+
+    .book-now-btn {
+        font-size: 13px;
+        padding: 10px 24px;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    .success-card h2 {
+        font-size: 17px;
+    }
+
+    footer {
+        padding: 14px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+        display: block;
+    }
+}
