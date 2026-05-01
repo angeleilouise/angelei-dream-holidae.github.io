@@ -27,27 +27,27 @@ const holidaeBundle = [ // Assigns the holidaeBundle with the following values:
     {
         title: "⛇☃︎ Winter Wonderland ☃︎⛇", // Interactive button 1 (title, desc, img)
         desc: "The Winter Wonderland holiday bundle begins with a sophisticated stay at the Chalet Fantasia hotel, situated in a sunny and very peaceful location and with an amazing view of the most iconic Matterhorn.",
-        img: "/Holidae Website/media/fantasia.jpg"
+        img: "/media/fantasia.jpg"
     },
     {
         title: "↟↟𓂃 ོ ☼𓂃 Sustainable Transportation 𓂃 ོ𓂃↟ 𖠰", // Interactive button 2 (title, desc, img)
         desc: "Zermatt is a car-free village with free E-buses and shuttle trains to ensure comfortability while traveling around the location.",
-        img: "/Holidae Website/media/train.webp"
+        img: "/media/train.webp"
     },
     {
         title: "𓌉 ◯ 𓇋 Excellent Dining 𓐐𓎩 ", // Interactive button 3 (title, desc, img)
         desc: "Experience traditional Valais cuisine all while encountering breathtaking views and a beautiful panorama of the Matternhorn.",
-        img: "/Holidae Website/media/cuisine.jpg"
+        img: "/media/cuisine.jpg"
     },
     {
         title: "Unlimited Skiing ⛷", // Interactive button 4 (title, desc, img)
         desc: "Ski and glide as you witness a breathtaking mountain panoramas and discover the peaks in the Alps.",
-        img: "/Holidae Website/media/ski.jpg"
+        img: "/media/ski.jpg"
     },
     {
         title: "⛰︎ ☀︎ Peak Hiking ☀︎ ❀", // Interactive button 5 (title, desc, img)
         desc: "Walk and explore along the Matternhorn Glacier Paradise and enjoy the views of Zermatt's nature.",
-        img: "/Holidae Website/media/hike.jpg"
+        img: "/media/hike.jpg"
     }
 ];
 
